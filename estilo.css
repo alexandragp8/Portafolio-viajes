@@ -37,8 +37,6 @@ body {
 	align-items: center;
 }
 
-
-
 .logo {
 	grid-area: logo; 
 	z-index: 5;
