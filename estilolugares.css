@@ -36,7 +36,7 @@ body {
 .menu {
 	grid-area: menu; 
 	z-index: 6;
-	margin: -16% 35%;
+	margin: -30% 35%;
 }
 
 .menu ul {
@@ -55,7 +55,7 @@ body {
 	border-radius:5px;
    color:#000;
    text-decoration:none;
-   padding:4px 7px;
+   padding:5px 7px;
    line-height:normal;
    font-size:25px;
    font-weight:bold;
@@ -71,20 +71,24 @@ body {
 	border-radius:5px;
 	box-shadow:0 2px 2px 3px rgba(129, 127, 127, 0.2);
 	color: #fff;
+	opacity: 0.55;
+			outline: 0;
+			-moz-transition: opacity .25s ease-in-out;
+			-webkit-transition: opacity .25s ease-in-out;
+			-ms-transition: opacity .25s ease-in-out;
+			transition: opacity .25s ease-in-out;
 }
 
 
 
 .cuerpo {
-	position: absolute;
+	position: relative;
 	grid-area: cuerpo; 
 	background-color: #ffffff70;
-	width: 77%;
+	width: 50%;
 	height: 70%;
-	padding: 10%;
-	margin: 2%;
-
-
+	padding: 8%;
+    margin: 2% auto;
 
 }
 
@@ -94,12 +98,9 @@ body {
 
 }
 
-.mapa {
-	
-}
 
 /* Icons */
-
+/*
 	.icon {
 		text-decoration: none;
 		position: relative;
@@ -134,16 +135,16 @@ body {
 		.icon > .label {
 			display: none;
 		}
+*/
+/* Nav 
 
-/* Nav */
-
-	#nav {
+	.nav {
 		text-align: center;
 		height: 4.25em;
 		cursor: default;
 	}
 
-		#nav a {
+		.nav a {
 			position: relative;
 			display: inline-block;
 			color: #ffffff;
@@ -160,15 +161,15 @@ body {
 			transition: opacity .25s ease-in-out;
 		}
 
-			#nav a.icon:before {
+			.nav a.icon:before {
 				padding-right: 0;
 			}
 
-			#nav a:before {
+			.nav a:before {
 				font-size: 0.8em;
 			}
 
-			#nav a:after {
+			.nav a:after {
 				content: '';
 				display: block;
 				position: absolute;
@@ -184,7 +185,7 @@ body {
 				transition: border-bottom-width .25s ease-in-out;
 			}
 
-			#nav a span {
+			.nav a span {
 				display: block;
 				position: absolute;
 				background: #222222;
@@ -203,7 +204,7 @@ body {
 				margin-left: -2.75em;
 			}
 
-				#nav a span:after {
+				.nav a span:after {
 					content: '';
 					display: block;
 					position: absolute;
@@ -215,35 +216,35 @@ body {
 					border-right: solid 0.6em transparent;
 				}
 
-			#nav a:hover {
+			.nav a:hover {
 				opacity: 1.0;
 			}
 
-				#nav a:hover span {
+				.nav a:hover span {
 					opacity: 1.0;
 				}
 
-			#nav a.active {
+			.nav a.active {
 				opacity: 1.0;
 			}
 
-				#nav a.active:after {
+				.nav a.active:after {
 					border-bottom-width: 0.5em;
 				}
 
 		@media screen and (max-width: 980px) {
 
-			#nav a span {
+			.nav a span {
 				display: none;
 			}
 
 		}
-
+*/
 		/* Footer */
 
 	.footer {
 		grid-area: footer;
-		margin: 37% 0% 0% 0%;
+		margin: 0% 0% 0% 0%;
 		color: #28714e;
 		text-align: center;
 		padding: 2px 0 2px 0;
