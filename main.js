@@ -2,8 +2,8 @@ $(document).ready(function(){
 
     let lastView;
 
-$( '.navbar-nav a' ).on( 'click', function () {
-    $( '.navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+$( 'ul a' ).on( 'click', function () {
+    $( 'ul' ).find( 'li.active' ).removeClass( 'active' );
     let name = $( this ).attr('href');
     console.log(name.replace('#',''));
     $(lastView).hide();
