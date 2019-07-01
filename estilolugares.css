@@ -4,7 +4,7 @@
 
 body {
 	background-image: url("imagenes/fondo1.png");
-
+	overflow: hidden;
 }
 
 /*GRID*/
@@ -87,7 +87,7 @@ body {
 	background-color: #ffffff70;
 	width: 50%;
 	height: 70%;
-	padding: 8%;
+	padding: 2%;
     margin: 2% auto;
 
 }
@@ -102,8 +102,18 @@ body {
 	
 }
 
-.mapa {
-
+.mapa{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.mapa iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 /* Icons */
@@ -377,14 +387,3 @@ ul.acordeon li h4 {
 font-size: 12px;
 letter-spacing: 1px;
 }
-
-
-
-
-
-
-
-
-
-
-
