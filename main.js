@@ -4,8 +4,12 @@ $(document).ready(function(){
 
 $( 'ul a' ).on( 'click', function () {
     $( 'ul' ).find( 'li.active' ).removeClass( 'active' );
-    let name = $( this ).attr('href');
-    console.log(name.replace('#',''));
+    let name = $( this ).attr('name');
+    name = '#'+name;
+    console.log(name);
+    if(lastView==undefined){
+        lastView = $( 'ul' ).find( 'li.active' ).children().attr('name');
+    } 
     $(lastView).hide();
     $(name).show();
     lastView = name;
