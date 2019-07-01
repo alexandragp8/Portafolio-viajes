@@ -33,13 +33,6 @@ body {
 	align-items: center;
 }
 
-.logo {
-	grid-area: logo; 
-	z-index: 5;
-	padding: 8% 11% 7%;
-	margin: -8% -5%;
-}
-
 .menu {
 	grid-area: menu; 
 	z-index: 6;
