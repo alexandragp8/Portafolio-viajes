@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Colombia</title>
 	<link rel="stylesheet" href="estilolugares.css">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="main.js"></script>
 </head>
 <body>
 
@@ -18,60 +20,71 @@
 			    <div class="menu">
 			    	<ul>
 				        <li><a href="index.html" class="boton-menu">Inicio</a></li>	
-						<li><a href="" class="boton-menu">Chiribiquete</a></li>
-						<li><a href="" class="boton-menu">Galeria</a></li>
-						<li><a href="" class="boton-menu">Ubicación</a></li>
+						<li class="active"><a name="descripcion" class="boton-menu">Descripcion</a></li>
+						<li><a name="galeria" class="boton-menu">Galeria</a></li>
+						<li><a name="mapa" class="boton-menu">Ubicación</a></li>
+						<li><a href="" class="boton-menu">Lugares</a>
+							<ul>
+								<li><a href="tintipan.html" class="boton-menu">Tintipan</a></li>
+								<li><a href="katios.html" class="boton-menu">Los Katios</a></li>
+								<li><a href="amacayacu.html" class="boton-menu">Amacayacu</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<div class="cuerpo">
-		 <div class="art">
-		 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque in repellat distinctio consectetur, voluptas aliquid, alias quibusdam reiciendis reprehenderit ducimus illum iure sed suscipit voluptatibus rem ipsum minus officiis amet.
+<div class="cuerpo">
 
-		 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque in repellat distinctio consectetur, voluptas aliquid, alias quibusdam reiciendis reprehenderit ducimus illum iure sed suscipit voluptatibus rem ipsum minus officiis amet.
+	  <div id="descripcion" style="display: block">
+	
+		<div class="art">
+			<span class="titulo"><h1><b> Parque Nacional Amacayacu</b></h1></span>
+			<br>
+			<p>El Parque Nacional Amacayacu protege una gran franja de la región amazónica en el sur de Colombia. Se accede al parque en barco desde la ciudad de Leticia, y es el hogar de primates y cientos de especies de aves. San Martín de Amacayacu es un asentamiento indígena de Ticuna en lo profundo de la selva. Al suroeste del parque se encuentra el pueblo de Puerto Nariño, con una torre de observación y senderos. El cercano lago Tarapoto es conocido por sus delfines rosados.<br>
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque in repellat distinctio consectetur, voluptas aliquid, alias quibusdam reiciendis reprehenderit ducimus illum iure sed suscipit voluptatibus rem ipsum minus officiis amet.
+				<br>
+				<li>Caminata por el Sendero Nainekumaw y Ceiba, este recorrido inicia en el centro de visitantes, es decir, el hospedaje del parque YEWAE (Anaconda - Madre del agua), allí un funcionario del lugar, te enseñará sobre los árboles de la región antes de iniciar.</li>
+				<br>
+				<li>La Isla de los Micos, el recorrido a este mágico lugar, dura aproximadamente 6 horas, se inicia a partir de las 8:00 am hasta las 2:00 pm,esta Isla es un santuario de la selva, pues la fauna y flora de la región se ubica aquí. Al llegar se inicia una caminata con una duración de 20 minutos aproximadamente por la isla donde podrás conocer y alimentar a los micos de la especie Frayle.</li></p>
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque in repellat distinctio consectetur, voluptas aliquid, alias quibusdam reiciendis reprehenderit ducimus illum iure sed suscipit voluptatibus rem ipsum minus officiis amet.</p>
-		 </div>
-		
-		 	<div class="acor">
-				
-					<ul class="acordeon">
-					<li>
-					<h4>DESIERTO</h4>
-					<a><img src="img/desierto.jpg"></a>
-					</li>
-					<li>
-					<h4>LAGO</h4>
-					<a><img src="img/lago.jpg"></a>
-					</li>
-					<li>
-					<h4 class="linea">BOSQUE</h4>
-					<a><img src="img/bosque.jpg"></a>
-					</li>
-					<li>
-					<h4 class="linea">NEVADO</h4>
-					<a><img src="img/nevado.jpg"></a>
-					</li>
-					<li>
-						<div class="linea">
-					<h4>SALAR</h4>
-					</div>
-					<a><img src="img/salar.jpg"></a>
-					</li>
-					</ul>
-
-				</div>
-		
-
-		 <div class="mapa">
-		 	 
-		 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d146482.64964691052!2d-72.77024923697282!3d0.7401951816259031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e18db32f30efcc5%3A0xb65784ecd2ac69e1!2sParque+Nacional+Natural+Serran%C3%ADa+de+Chiribiquete!5e1!3m2!1ses-419!2sco!4v1561966752454!5m2!1ses-419!2sco" width="800" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-		 </div>
 		</div>
+	
+	</div>
+	  <div class="galeria" id="galeria" style="display: none">
+			<span class="titulo"><h1><b> Galeria</b></h1></span>
+			<ul class="acordeon">
+			<li>
+			<h4 class="linea">Vida</h4>
+			<a><img src="imagenes/Lugares/chiribiquete1.jpg"></a>
+			</li>
+			<li>
+			<h4 class="linea">Diversidad</h4>
+			<a><img src="imagenes/Lugares/chiribiquete2.jpg"></a>
+			</li>
+			<li>
+			<h4 class="linea">Magia</h4>
+			<a><img src="imagenes/Lugares/chiribiquete3.jpg"></a>
+			</li>
+			<li>
+			<h4 class="linea">Sueños</h4>
+			<a><img src="imagenes/Lugares/chiribiquete4.jpg"></a>
+			</li>
+			<li>
+			<h4 class="linea">Pureza</h4>			
+			<a><img src="imagenes/Lugares/chiribiquete5.jpg"></a>
+			</li>
+			</ul>
+		</div>
+	
+	  <div class="mapa" id="mapa" style="display: none">
+			<span class="titulo"><h1><b>Ubicación</b></h1></span>
+			<br>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d146482.64964691052!2d-72.77024923697282!3d0.7401951816259031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e18db32f30efcc5%3A0xb65784ecd2ac69e1!2sParque+Nacional+Natural+Serran%C3%ADa+de+Chiribiquete!5e1!3m2!1ses-419!2sco!4v1561966752454!5m2!1ses-419!2sco" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	  
+</div>
 
 		<div class="footer">
 				<ul class="copyright">

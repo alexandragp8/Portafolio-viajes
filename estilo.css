@@ -118,7 +118,7 @@ ul, ol {
 	display: grid;
 	grid-template-columns: repeat(6,1fr);
 	grid-template-rows: repeat(1,auto);
-	grid-template-areas: "logo logo logo nav nav nav"
+	grid-template-areas: "logo nav nav nav nav nav"
 }
 
 .cuerpo {
