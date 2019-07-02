@@ -22,9 +22,14 @@ body {
 	display: grid;
 	grid-template-columns: repeat(6,1fr);
 	grid-template-rows: repeat(1,auto);
-	grid-template-areas: "logo logo logo nav nav nav"
+	grid-template-areas: "logo logo nav nav nav nav"
 }
 
+.titulo {
+	text-align: center;
+	font-family: "Caviar Dreams";
+	
+}
 
 .nav {
 	grid-area: nav;
@@ -85,8 +90,8 @@ body {
 	position: relative;
 	grid-area: cuerpo; 
 	background-color: #ffffff70;
-	width: 50%;
-	height: 70%;
+	width: 70%;
+	height: 360px;
 	padding: 2%;
     margin: 2% auto;
 
@@ -98,7 +103,9 @@ body {
 
 }
 
-.gale {
+.galeria {
+	font-family: "Caviar Dreams";
+
 	
 }
 
@@ -106,7 +113,9 @@ body {
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
-    height:0;
+	height:0;
+	font-family: "Caviar Dreams";
+
 }
 .mapa iframe{
     left:0;
@@ -303,7 +312,6 @@ body {
 
 /* Ajustes generales */
 ul.acordeon * {
-font-family: pacifica;
 -webkit-transition: all .6s ease-in-out;
 -moz-transition: all .6s ease-in-out;
 transition: all .6s ease-in-out;
@@ -311,17 +319,17 @@ transition: all .6s ease-in-out;
 }
 /* Contenedor general */
 ul.acordeon {
-width: 100%; /* Personalizar ancho total */
+width: 100%; 
 overflow: hidden;
 padding: 0;
-background: #3300670;
+background: #e2f4eb80;
 text-align: center;
 list-style: none;
 font-size: 0;
 margin-top: 40px;
-/*box-shadow: 0 0 10px #ffffff40;*/
-
+height: 350px;
 }
+
 /* Cada elemento */
 ul.acordeon li {
 position: relative;
@@ -332,7 +340,7 @@ height:0;
 padding-bottom: 40%; /* Ratio aspecto imagen = (height*X)/width */
 background: #ffffff50;
 text-align: center;
-box-shadow: -2px 0px 8px #000;
+box-shadow: -2px 0px 8px #00000080;
 }
 /* Títulos pestañas */
 ul.acordeon li h4 {
@@ -360,12 +368,12 @@ display: inline-block;
 *display: inline; zoom: 1; /* IE7 */
 width: 0%;
 padding:0;
-background: #33006640;
+background: #e2f4eb40;
 }
 /* Hover: Desplegamos elemento aumentando su ancho */
 ul.acordeon li:hover {
 width: 60%; /* 100 - 10*(nºelem-1) // X=60 para ratio imagen */ 
-background: #33006640;
+background: #e2f4eb40;
 }
 /* Hover: Hacemos que el título recupere la horizontal y le ponemos un fondo */
 ul.acordeon li:hover h4 {
@@ -386,4 +394,103 @@ width: 100%;
 ul.acordeon li h4 {
 font-size: 12px;
 letter-spacing: 1px;
+}}
+
+/*GRID*/
+
+.grid-container {
+	width: 100%;
 }
+
+
+.nav {
+	grid-area: nav;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.menu {
+	grid-area: menu; 
+	z-index: 6;
+	margin: -16% 35%;
+}
+
+.menu ul {
+	display: flex;
+	list-style: none;
+}
+
+.menu ul li a {
+	padding: 5px;
+	text-decoration: none;
+}
+
+.boton-menu {
+	display:inline-block;
+	background:#ffffffd2;
+	border-radius:5px;
+   color:#000;
+   text-decoration:none;
+   padding:4px 7px;
+   line-height:normal;
+   font-size:25px;
+   font-weight:bold;
+   -webkit-transition:all 700ms ease;
+   -o-transition:all 700ms ease;
+   transition:all 700ms ease;
+   margin-top: 10px;
+   margin-left: 20px;
+}
+
+.boton-menu:hover {
+	background:#fcfafa;
+	border-radius:5px;
+	box-shadow:0 2px 2px 3px rgba(129, 127, 127, 0.2);
+	color: #080808;
+}
+
+
+
+/*menu desplqglable*/
+
+ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#ffffff80;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul  {
+				right:-140px;
+				top:0px;
+			}

@@ -1,0 +1,67 @@
+a {
+	text-decoration-line: none;
+	color: #28714e;
+}
+
+b{
+	font-family: 'Century Gothic';
+	font-size: 90px;
+}
+
+p {
+	text-align: center;
+	font-family: 'Century Gothic';
+	font-size: 20px;
+	padding-left: 15px;
+	padding-right: 7px;
+}
+
+.grid {
+	display: grid;
+	grid-template-areas: 
+	'mapa mapa mapa mapa mapa mapa'
+	'infoa infoa infoa imga imga imga'
+	'imgb imgb imgb infob infob infob'
+	'pie pie pie pie pie pie';
+	grid-gap: 10px;
+}
+
+.grid div {
+	font-family: 'Century Gothic';
+}
+
+.mapa {
+	grid-area: mapa;
+}
+iframe {
+	padding-left: 15px;
+}
+
+.infoa {
+	grid-area: infoa;
+	font-size: 22px;
+	text-align: justify;
+	padding-left: 15px;
+}
+
+.imga {
+	grid-area: imga;
+	padding-left: 89px;
+}
+
+.infob {
+	grid-area: infob;
+	font-size: 22px;
+	text-align: justify;
+	padding-right: 19px;
+}
+
+.imgb {
+	grid-area: imgb;
+	padding-left: 15px;
+}
+
+.pie {
+	grid-area: pie;
+	text-align: center;
+}

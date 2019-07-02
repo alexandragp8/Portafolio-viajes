@@ -1,0 +1,63 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    'cabecera cabecera cabecera cabecera cabecera cabecera'
+    'info info info info lugares lugares'
+    'dato dato dato dato lugares lugares'
+    'mapa mapa mapa mapa mapa mapa'
+    'pie pie pie pie pie pie';
+  grid-gap: 5px;
+  grid-template-columns: 200px auto 200px;
+  padding: 10px 10px;
+}
+
+.grid div {
+  background-color: #ffffff;
+  font-family: 'Century Gothic';
+  background-color: #c6ebd9;
+}
+
+.cabecera {
+  grid-area: cabecera;
+  font-size: 90px;
+  text-align: center;
+ text-shadow: 4px 4px 3px rgba(24,8,33,.5);
+}
+a {
+ text-decoration-line: none;
+ color: #28714e;
+}
+
+.foto {
+  grid-area: foto;
+  text-align: center;
+}
+
+.info {
+  grid-area: info;
+  text-align: justify;
+  padding: 10px;
+}
+
+.lugares {
+  grid-area: lugares;
+  text-align: justify;
+  padding: 10px;
+  padding-top: 90px;
+}
+
+.dato {
+  grid-area: dato;
+  text-align: justify;
+  padding: 10px;
+}
+
+.mapa {
+  grid-area: mapa;
+  padding: 10px;
+}
+
+.pie {
+  grid-area: pie;
+  text-align: center;
+}

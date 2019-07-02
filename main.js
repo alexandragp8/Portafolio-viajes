@@ -7,7 +7,7 @@ $( 'ul a' ).on( 'click', function () {
     let name = $( this ).attr('name');
     name = '#'+name;
     console.log(name);
-    if(lastView==undefined){
+    if(lastView==""){
         lastView = $( 'ul' ).find( 'li.active' ).children().attr('name');
     } 
     $(lastView).hide();

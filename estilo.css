@@ -13,22 +13,8 @@ body {
 
 .grid-container {
 	width: 100%;
-
-
-	/*display: grid;
-	grid-template-areas:
-		'cabecera cabecera cabecera cabecera cabecera cabecera '
-		'logo logo logo logo logo logo '
-		'menu menu menu menu menu menu'
-		'cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo'
-		'footer footer footer footer footer footer';
-		grid-template-columns:200px auto 200px;
-  		padding: 10px;
-  		font-family: Century Gothic;
-  		z-index: 4;
-  		height: 0px;
-  		*/
 }
+
 
 .nav {
 	grid-area: nav;
@@ -37,11 +23,7 @@ body {
 	align-items: center;
 }
 
-.logo {
-	grid-area: logo; 
-	z-index: 5;
-	padding: 0% 3% 0%;
-}
+
 
 .menu {
 	grid-area: menu; 
@@ -199,7 +181,7 @@ height: 100%;
 
 	.footer {
 		grid-area: footer;
-		margin: 37% 0% 0% 0%;
+		margin: 36% 0% 0% 0%;
 		color: #28714e;
 		text-align: center;
 		padding: 2px 0 2px 0;
